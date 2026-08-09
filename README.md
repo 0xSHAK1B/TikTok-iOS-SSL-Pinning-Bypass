@@ -132,7 +132,6 @@ Need a bypass for a **specific TikTok iOS version** or another **iOS app**? I of
 | Threads | iOS | [**Threads iOS SSL Pinning Bypass**](https://github.com/0xSHAK1B/Threads-iOS-SSL-Pinning-Bypass) |
 | Meta Business Suite | Android | [**Meta Business Suite SSL Pinning Bypass**](https://github.com/0xSHAK1B/MetaBusiness-Suite-SSL-Pinning-Bypass) |
 | X (Twitter) | Android | [**X (Twitter) SSL Pinning Bypass**](https://github.com/0xSHAK1B/X-Twitter-SSL-Pinning-Bypass) |
-| AliExpress | Android | [**AliExpress SSL Pinning Bypass**](https://github.com/0xSHAK1B/AliExpress-SSL-Pinning-Bypass) |
 
 ---
 
