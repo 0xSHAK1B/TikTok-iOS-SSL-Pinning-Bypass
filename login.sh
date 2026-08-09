@@ -1,0 +1,36 @@
+curl --http2 -L -X POST 'https://api16-normal-c-alisg.tiktokv.com/passport/email/send_code/?residence=BD&os_version=26.6&multi_login=1&from_accountsdk=1&app_id=1233&app_name=musical_ly&user_selected_region=0&locale=en-GB&ac=WIFI&sys_region=BD&email_theme=2&version_code=46.3.0&channel=App%20Store&ssmix=a&op_region=BD&reg_store_region=bd&os_api=18&device_platform=iphone&device_type=iPhone15,4&account_region=bd&tz_name=Asia/Dhaka&tz_offset=21600&app_language=en&build_number=463036&current_region=BD&aid=1233&screen_width=1179&uoo=1&language=en&app_version=46.3.0&resolution=1179*2556&cronet_version=3a9f3ddf_2026-06-25&ttnet_version=4.2.243.24-tiktok&use_store_region_cookie=1' \
+-H 'User-Agent: TikTok 46.3.0 rv:463036 (iPhone; iOS 26.6; en_BD) Cronet' \
+-H 'Accept-Encoding: gzip, deflate' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+-H 'x-vc-bdturing-sdk-version: 2.4.2' \
+-H 'x-tt-bypass-dp: 1' \
+-H 'tt-device-guard-client-data: eyJyZXFfY29udGVudCI6ImRldmljZV90b2tlbixwYXRoLHRpbWVzdGFtcCIsImR0b2tlbl9zaWduIjoiIiwidGltZXN0YW1wIjoxNzg2MjU4ODQ4LCJkcmVxX3NpZ24iOiJNRVVDSUhJVmRaYVdCRGNrR29ub1RJV3oxNndTUnRndE13SHpmS1wvUlJRZXpsVFRQQWlFQXBwUzBFb2p4am1FQm9BelpaQnJrb3FsS0JTc29OZVFlcjR4UXVDSnp0cDA9IiwiZGV2aWNlX3Rva2VuIjoiIn0=' \
+-H 'passport-sdk-sign: x-tt-token' \
+-H 'tt-device-guard-iteration-version: 1' \
+-H 'passport-sdk-version: 5.12.1' \
+-H 'x-tt-request-tag: n=0;s=-1' \
+-H 'passport-sdk-serializer: 1' \
+-H 'tt-ticket-guard-public-key: BGmQoGqjUaOu6nBvPni3VefOHB7rjo/rEqhknSkod6i0S1BPR5yq7+Odb7GdfNHlV42+oFFrdX/sSv06CMmuDv4=' \
+-H 'tt-ticket-guard-version: 3' \
+-H 'passport-sdk-settings: x-tt-token' \
+-H 'tt-ticket-guard-client-data: eyJyZXFfY29udGVudCI6InRpY2tldCxwYXRoLHRpbWVzdGFtcCIsInJlcV9zaWduIjoiTUVVQ0lRREZtbUNNaDI3cWJyWFR0eElcL1pEdjNIS2J0UEtIQ3NTckpmeWU4NElKVVR3SWdDbW14TG1lQnFGeFBrWk9PR0NpVEJwaDJoQ2pmbnNxNHVCaHJwY0t0ditrPSIsInRpbWVzdGFtcCI6MTc4NjI1ODg0OH0=' \
+-H 'x-tt-pba-encode: 0040' \
+-H 'oec-cs-sdk-version: v10.02.09_V56' \
+-H 'sdk-version: 2' \
+-H 'tt-ticket-guard-iteration-version: 1' \
+-H 'oec-vc-sdk-version: 3.2.2.i18n' \
+-H 'tt-request-time: 1786258848712' \
+-H 'pns-att-enable: 0' \
+-H 'x-ss-stub: D519B205514F9838D4F0A0D371C322D6' \
+-H 'x-tt-trace-id: 00-e552fd6c01045f091c973086414004d1-e552fd6c01045f09-01' \
+-H 'x-argus: Fgx/opFb9fdZpXZJInpGlZr4+C11DLlfzsu4atn3Ff/DYhSRTs1LgqByrTOXThNewHJ4C9bZBoaUo73Ie4fFTJ9xFIhQIDinT9eXN0xn7sYmH1fvpDWMjFuICGXaGDv+maRyM5XuXCD4qr1DP1xQRGctQtQXNsjZYkDwVnorDEKBolKC6WEVzIMZfdGq9shwnpui4Mqx5lGLtTan2vmP1nzot/q6XxRiRUBVCP4xcq/9Fsh1aCx/+0Qwibgk8OWgtYK3mzJBE42uh17qUXVRl5Mn2rVkuZypNGWSvU8eHwAcvveMRh5GjkpLttmpm/UlWu4=' \
+-H 'x-gorgon: 840440ea00002f41e93cdb64e4f3aaf638f48c37bc480e473bb9' \
+-H 'x-khronos: 1786258848' \
+-H 'x-ladon: 5gTnZmZMIj5iNMSvWXdr2chYydbqKcoC1YLfA8i8uae8+A7N' \
+-H 'Cookie: msToken=AAQqDVLQekCtrRVPLAg7JPKPa_twYwb0r3X2rQ9zHwSZwIJAY5qwuVe3DkHCFSChR4Q_wm78tFfp4pEXb0h35ZOi; odin_tt=c918d2680c3d81b4162b23198963cba9635318c6590e1acca13c489b5dad597b4bd8bd5e9cc06960d02bb558e37509ef' \
+--data-urlencode 'account_sdk_source=app' \
+--data-urlencode 'email=68706d6468686461766d646e6c67456268646c692b666a68' \
+--data-urlencode 'enable_account_selection=1' \
+--data-urlencode 'mix_mode=1' \
+--data-urlencode 'support_webview=1' \
+--data-urlencode 'type=3433'
