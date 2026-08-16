@@ -1,142 +1,156 @@
-# TikTok iOS SSL Pinning Bypass 2026 – Intercept HTTPS Traffic on iPhone & iPad
+<div align="center">
 
-[![Telegram](https://img.shields.io/badge/💬_Chat_on_Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=121212&color=26A5E4&logoWidth=20)](https://t.me/MUH4MM4DSH4KIB)
-![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
-![ARM64](https://img.shields.io/badge/arm64-Supported-blue?style=for-the-badge)
-![TikTok](https://img.shields.io/badge/TikTok-v46.3.0-ff0050?style=for-the-badge&logo=tiktok&logoColor=white)
+# 🔓 TikTok iOS SSL Pinning Bypass
 
-> **Bypass SSL/TLS certificate pinning in TikTok for iOS** to intercept, capture, and analyze HTTPS network traffic — including full login, OTP, and authentication flows — using proxy tools like Burp Suite, mitmproxy, Reqable, or Proxypin. Working as of **2026**.
+### Intercept, capture & analyze TikTok's HTTPS traffic on iPhone & iPad — no jailbreak · 2026
 
----
+<br>
 
-## Proof of Concept
+[![Download IPA](https://img.shields.io/badge/⬇_DOWNLOAD_IPA_v46.4.0-ff0050?style=for-the-badge&logo=tiktok&logoColor=white)](../../releases/latest)
+[![Telegram](https://img.shields.io/badge/Chat_on_Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/MUH4MM4DSH4KIB)
 
-<img width="1276" height="786" alt="TikTok iOS SSL Pinning Bypass PoC – Login & Passport Traffic Captured" src="https://github.com/user-attachments/assets/b54ec040-01ea-4a5e-800d-7e5ef5997385" />
+![iOS](https://img.shields.io/badge/iOS_14.0+-000000?style=flat-square&logo=apple&logoColor=white)
+![ARM64](https://img.shields.io/badge/arm64-blue?style=flat-square)
+![Version](https://img.shields.io/badge/TikTok-v46.4.0-ff0050?style=flat-square&logo=tiktok&logoColor=white)
+![Build](https://img.shields.io/badge/Build-464038-555555?style=flat-square)
+![Updated](https://img.shields.io/badge/Updated-Regularly-brightgreen?style=flat-square)
 
-> Live capture showing TikTok iOS `passport/email/send_code/` endpoint intercepted in cleartext. Version **46.3.0** on iPhone running iOS 26.6.
+🔓 Pinning defeated&nbsp;&nbsp;·&nbsp;&nbsp;🔐 Login & OTP&nbsp;&nbsp;·&nbsp;&nbsp;🧬 x-argus / x-gorgon&nbsp;&nbsp;·&nbsp;&nbsp;🎬 Video CDN&nbsp;&nbsp;·&nbsp;&nbsp;🛒 TikTok Shop
 
----
+<img width="1073" height="710" alt="TikTok iOS SSL Pinning Bypass PoC – Login & Passport Traffic Captured" src="https://github.com/user-attachments/assets/72bab04f-e798-4eab-aa79-65fe59913869" />
 
-## Supported TikTok iOS Version
+_Live capture — TikTok iOS `passport/email/send_code/` intercepted in cleartext. v46.4.0 on iPhone / iOS 26.6._
 
-| App | Bundle ID | Version | Build | Architecture | Status |
-|-----|-----------|---------|-------|--------------|--------|
-| TikTok for iOS | `com.zhiliaoapp.musically` | **46.3.0** | 463036 | `arm64` | ✅ Bypassed ([Contact Telegram](https://t.me/MUH4MM4DSH4KIB)) |
+</div>
 
-> The patched IPA is **not publicly distributed**. To request access, [contact me on Telegram](https://t.me/MUH4MM4DSH4KIB).
-
----
-
-## What You Can Capture
-
-With SSL pinning bypassed on TikTok iOS, you get full visibility into ByteDance's entire API surface:
-
-- **Login & authentication** — `passport/email/send_code/`, `passport/auth/available_ways/`, OTP verification, and session token issuance
-- **Security headers** — `x-argus`, `x-gorgon`, `x-ladon`, `x-khronos` encryption parameters in cleartext
-- **Ticket Guard** — `tt-ticket-guard` public keys, client data, and signature payloads
-- **Device Guard** — `tt-device-guard` device token signing and integrity check payloads
-- **For You feed** — API requests powering TikTok's recommendation algorithm
-- **Video delivery** — CDN URLs, streaming quality negotiation via Cronet/TTNet, and caching behavior
-- **Search & discovery** — Search queries, hashtag lookups, and trending content endpoints
-- **Upload pipeline** — Video upload endpoints, metadata submission, and processing callbacks
-- **Analytics & telemetry** — Pigeon session tracking, device telemetry, and A/B test assignments
-- **TikTok Shop** — Product listings, cart management, and checkout flow endpoints
-- **Live streaming** — Webcast configuration, stream key delivery, and chat endpoints
+> [!TIP]
+> **Download the patched IPA** from the **[Releases](../../releases/latest)** section — or message me on **[Telegram](https://t.me/MUH4MM4DSH4KIB)** for the newest build or another version.
 
 ---
 
-## Requirements
+## ✨ Why This Build
 
-### iOS Device
-
-- iPhone or iPad running **iOS 14.0+**
-- One of the following installation methods:
-  - [**TrollStore**](https://github.com/opa334/TrollStore) — permanent install on iOS 14.0 – 16.6.1 / 17.0 (no signing, no expiration)
-  - [**AltStore**](https://altstore.io/) — sideload with a 7-day Apple ID signing
-  - [**Sideloadly**](https://sideloadly.io/) — desktop sideloading tool
-  - [**Scarlet**](https://usescarlet.com/) — iOS 14+ sideloader with cert-based signing
-
-### MITM Proxy Tool
-
-- [**Burp Suite**](https://portswigger.net/burp) — industry-standard web security testing proxy
-- [**mitmproxy**](https://mitmproxy.org/) — open-source, scriptable HTTPS proxy
-- [**Reqable**](https://reqable.com) — cross-platform HTTP debugging proxy
-- [**Proxypin**](https://proxypin.com) — lightweight proxy with mobile support
+| | |
+|:--|:--|
+| 🔓 **Full pinning bypass** | Cronet/TTNet **and** libvcn video-CDN pinning both defeated |
+| 🔐 **Login flow works** | Passport / OTP / registration captured in cleartext |
+| 🧬 **Signing headers in the clear** | `x-argus`, `x-gorgon`, `x-ladon`, `x-khronos` visible unencrypted |
+| 🎬 **Everything else too** | Feed, upload, search, live, analytics, TikTok Shop |
+| 📱 **Non-jailbroken** | Runs on a stock iPhone/iPad, iOS 14.0+ |
 
 ---
 
-## How to Bypass TikTok iOS SSL Pinning (Step-by-Step)
+## 📦 Build
 
-### Step 1: Get the Patched IPA
-
-The SSL pinning bypassed TikTok IPA is **not publicly available**. To request access, [contact me on Telegram](https://t.me/MUH4MM4DSH4KIB).
-
-### Step 2: Install the Patched IPA on Your iOS Device
-
-Choose the installation method based on your iOS version and device:
-
-#### Option A — TrollStore (Recommended for supported devices)
-
-1. Open **TrollStore** on your iPhone/iPad
-2. Tap the **+** icon and select the downloaded IPA file
-3. Tap **Install** — the app installs permanently without expiration
-
-#### Option B — AltStore / Sideloadly
-
-1. Connect your iPhone/iPad to your computer
-2. Open AltStore or Sideloadly
-3. Drag the IPA file into the tool and sign with your Apple ID
-4. Trust the developer profile under **Settings → General → VPN & Device Management**
-
-> **Note:** If the official TikTok app is installed, you may need to uninstall it first depending on your signing method, as signatures will conflict.
-
-### Step 3: Configure Your MITM Proxy
-
-1. Open your proxy tool (Burp Suite, mitmproxy, Reqable, or Proxypin) on your PC or local network
-2. **Export** the proxy's CA certificate
-3. **Install and trust** the CA certificate on your iOS device:
-   - Email or AirDrop the `.crt` / `.pem` file to your device
-   - Open the file and install the profile via **Settings → General → VPN & Device Management → Install Profile**
-   - Go to **Settings → General → About → Certificate Trust Settings** and **enable full trust** for your proxy's CA
-4. **Configure** Wi-Fi proxy under **Settings → Wi-Fi → (your network) → Configure Proxy → Manual**
-
-### Step 4: Capture TikTok HTTPS Traffic
-
-1. Launch the patched **TikTok** app on your iOS device
-2. Log in, browse the For You page, upload videos, go live, or interact normally
-3. Watch **decrypted HTTPS requests and responses** appear in your proxy tool in real time
-
-> **Tip:** Make sure both the proxy CA certificate is installed **and** full trust is enabled in iOS Certificate Trust Settings — without this step, HTTPS decryption will fail silently.
+| App | Bundle ID | Version | Build | Arch |
+|:----|:----------|:-------:|:-----:|:----:|
+| **TikTok for iOS** | `com.zhiliaoapp.musically` | `46.4.0` | `464038` | `arm64` |
 
 ---
 
-## 🛠️ Custom Builds
+## 🎯 What You Can Capture
 
-Need a bypass for a **specific TikTok iOS version** or another **iOS app**? I offer custom SSL pinning bypass builds for any iOS application.
+Full visibility into ByteDance's entire API surface:
 
-[![Telegram](https://img.shields.io/badge/💬_Request_Custom_Build-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=121212&color=26A5E4&logoWidth=20)](https://t.me/MUH4MM4DSH4KIB)
+| Surface | Exposed in cleartext |
+|:--------|:---------------------|
+| 🔐 **Login & auth** | `passport/email/send_code/`, `passport/auth/available_ways/`, OTP, session tokens |
+| 🧬 **Signing headers** | `x-argus`, `x-gorgon`, `x-ladon`, `x-khronos` encryption parameters |
+| 🎟️ **Ticket Guard** | `tt-ticket-guard` public keys, client data, signature payloads |
+| 🛡️ **Device Guard** | `tt-device-guard` device-token signing and integrity payloads |
+| 🎯 **For You feed** | the API requests behind the recommendation algorithm |
+| 🎬 **Video delivery** | CDN URLs, quality negotiation (Cronet/TTNet), caching |
+| 🔍 **Search & discovery** | search queries, hashtag lookups, trending endpoints |
+| ⬆️ **Upload pipeline** | video upload, metadata submission, processing callbacks |
+| 📊 **Analytics & telemetry** | Pigeon session tracking, device telemetry, A/B assignments |
+| 🛒 **TikTok Shop** | product listings, cart, checkout flow |
+| 📡 **Live streaming** | webcast config, stream-key delivery, chat endpoints |
 
 ---
 
-## Related Projects
+## ⚙️ Requirements & Signing
+
+**iOS 14.0+**, plus a MITM proxy — [Burp Suite](https://portswigger.net/burp), [mitmproxy](https://mitmproxy.org/), [Reqable](https://reqable.com), or [Proxypin](https://proxypin.com).
+
+> [!IMPORTANT]
+> **How you install decides whether login capture works.** TikTok's device registration needs a keychain-access-group entitlement (`…com.chainlogin`). If your signing method strips it, `device_register` fails and you hit **"maximum login attempts."**
+
+| Install / signing method | Login & OTP | Notes |
+|:--|:---:|:--|
+| [**TrollStore**](https://github.com/opa334/TrollStore) | ✅ Works | 🏆 Best. iOS 14.0 – 16.6.1 / 17.0. Installs the IPA unmodified — entitlements intact, permanent, no re-sign. |
+| **KravaSign** / paid **Apple Developer** cert | ✅ Works | For devices TrollStore can't cover (iOS 17.1+, 18, 26). Signs with a profile that keeps the entitlements. |
+| [**Sideloadly**](https://sideloadly.io/) / [**AltStore**](https://altstore.io/) + **free Apple ID** | ❌ Max attempts | Free-account signing **strips** the entitlement → login fails. Browsing/feed still capture fine, but you can't log in. Only use with a paid/KravaSign cert. |
+
+> [!TIP]
+> **TL;DR** — TrollStore device → TrollStore. Newer iOS → KravaSign or a paid cert. **Never a free Apple ID** if you need login capture.
+
+---
+
+## 🚀 Setup
+
+1. **Download** the patched IPA from [Releases](../../releases/latest).
+2. **Install it** — *TrollStore:* open TrollStore → **+** → select the IPA → **Install**. *Newer iOS:* sign with **KravaSign** or a **paid cert** (not a free Apple ID) and trust the profile under **Settings → General → VPN & Device Management**. *(Uninstall the official TikTok app first — signatures conflict.)*
+3. **Trust your proxy CA** — install the `.crt`/`.pem` via **Settings → General → VPN & Device Management → Install Profile**, then enable it under **Settings → General → About → Certificate Trust Settings**.
+4. **Set the Wi-Fi proxy** — **Settings → Wi-Fi → (network) → Configure Proxy → Manual**.
+5. **Launch TikTok** — log in, browse, upload, or go live, and watch decrypted HTTPS stream into your proxy in real time.
+
+> [!WARNING]
+> You need **both** the CA installed **and** full trust enabled. Skip either and HTTPS decryption fails silently.
+
+---
+
+<div align="center">
+
+## 💼 Need a Custom Bypass?
+
+**Custom SSL pinning bypass · automated patching scripts · full reverse-engineering projects** — for any iOS or Android app.
+
+[![Request Custom Work](https://img.shields.io/badge/Message_me_on_Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/MUH4MM4DSH4KIB)
+
+</div>
+
+---
+
+> [!NOTE]
+> **Disclaimer** — For educational and security-research purposes only. Not affiliated with, endorsed by, or connected to TikTok or ByteDance. All trademarks belong to their respective owners. Only analyze traffic on accounts and devices you own or are authorized to test. Provided "as is", without warranty of any kind.
+
+---
+
+## 🔗 Related Projects
 
 | App | Platform | Repository |
 |-----|----------|------------|
-| TikTok | Android | [**TikTok SSL Pinning Bypass**](https://github.com/0xSHAK1B/TikTok-SSL-Pinning-Bypass) |
-| Facebook | Android | [**Facebook SSL Pinning Bypass**](https://github.com/0xSHAK1B/Facebook-SSL-Pinning-Bypass) |
-| Facebook | iOS | [**Facebook iOS SSL Pinning Bypass**](https://github.com/0xSHAK1B/Facebook-iOS-SSL-Pinning-Bypass) |
-| Instagram | Android | [**Instagram SSL Pinning Bypass**](https://github.com/0xSHAK1B/Instagram-SSL-Pinning-Bypass) |
-| Instagram | iOS | [**Instagram iOS SSL Pinning Bypass**](https://github.com/0xSHAK1B/Instagram-iOS-SSL-Pinning-Bypass) |
-| Messenger | Android | [**Messenger SSL Pinning Bypass**](https://github.com/0xSHAK1B/Messenger-SSL-Pinning-Bypass) |
-| Threads | Android | [**Threads SSL Pinning Bypass**](https://github.com/0xSHAK1B/Threads-SSL-Pinning-Bypass) |
-| Threads | iOS | [**Threads iOS SSL Pinning Bypass**](https://github.com/0xSHAK1B/Threads-iOS-SSL-Pinning-Bypass) |
-| Meta Business Suite | Android | [**Meta Business Suite SSL Pinning Bypass**](https://github.com/0xSHAK1B/MetaBusiness-Suite-SSL-Pinning-Bypass) |
-| X (Twitter) | Android | [**X (Twitter) SSL Pinning Bypass**](https://github.com/0xSHAK1B/X-Twitter-SSL-Pinning-Bypass) |
+| TikTok | Android | [TikTok SSL Pinning Bypass](https://github.com/0xSHAK1B/TIKTOK-SSL-Pinning-Bypass) |
+| Facebook | iOS | [Facebook iOS SSL Pinning Bypass](https://github.com/0xSHAK1B/Facebook-iOS-SSL-Pinning-Bypass) |
+| Instagram | iOS | [Instagram iOS SSL Pinning Bypass](https://github.com/0xSHAK1B/Instagram-iOS-SSL-Pinning-Bypass) |
+| Threads | iOS | [Threads iOS SSL Pinning Bypass](https://github.com/0xSHAK1B/Threads-iOS-SSL-Pinning-Bypass) |
+| Edits | iOS | [Edits iOS SSL Pinning Bypass](https://github.com/0xSHAK1B/Edits-iOS-SSL-Pinning-Bypass) |
+| Instants | iOS | [Instants iOS SSL Pinning Bypass](https://github.com/0xSHAK1B/Instants-iOS-SSL-Pinning-Bypass) |
+| Facebook | Android | [Facebook SSL Pinning Bypass](https://github.com/0xSHAK1B/Facebook-SSL-Pinning-Bypass) |
+| Instagram | Android | [Instagram SSL Pinning Bypass](https://github.com/0xSHAK1B/Instagram-SSL-Pinning-Bypass) |
+| Meta Business Suite | Android | [Meta Business Suite SSL Pinning Bypass](https://github.com/0xSHAK1B/Meta-Business-Suite-SSL-Pinning-Bypass) |
+| X (Twitter) | Android | [Twitter SSL Pinning Bypass](https://github.com/0xSHAK1B/Twitter-SSL-Pinning-Bypass) |
 
 ---
 
-## Contact & Latest Builds
+<div align="center">
 
-For the **most up-to-date** SSL pinning bypassed TikTok IPA and support:
+## 💖 Support This Project
 
-[![Telegram](https://img.shields.io/badge/💬_Chat_on_Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=121212&color=26A5E4&logoWidth=20)](https://t.me/MUH4MM4DSH4KIB)
+If this saved you time or helped your research, please **⭐ star the repo** — it helps others find it and keeps the builds coming.
+
+| Currency | Address |
+|:---------|:--------|
+| **BTC / ETH** | `0xea9a566a5123c3a1b8d60f8bdd845835716668f0` |
+| **USDT (TRC-20)** | `THssAZhUQEEsw15211rAaRLGRjSWXMX4PW` |
+
+<br>
+
+**📬 Newest builds · support · custom work**
+
+[![Telegram](https://img.shields.io/badge/@MUH4MM4DSH4KIB-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/MUH4MM4DSH4KIB)
+
+⭐ **Star the repo if it helped your research!**
+
+</div>
+
