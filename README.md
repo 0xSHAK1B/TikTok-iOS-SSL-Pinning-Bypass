@@ -6,20 +6,20 @@
 
 <br>
 
-[![Download IPA](https://img.shields.io/badge/⬇_DOWNLOAD_IPA_v46.4.0-ff0050?style=for-the-badge&logo=tiktok&logoColor=white)](../../releases/latest)
+[![Download IPA](https://img.shields.io/badge/⬇_DOWNLOAD_IPA_v46.8.0-ff0050?style=for-the-badge&logo=tiktok&logoColor=white)](../../releases/latest)
 [![Telegram](https://img.shields.io/badge/Chat_on_Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/MUH4MM4DSH4KIB)
 
 ![iOS](https://img.shields.io/badge/iOS_14.0+-000000?style=flat-square&logo=apple&logoColor=white)
 ![ARM64](https://img.shields.io/badge/arm64-blue?style=flat-square)
-![Version](https://img.shields.io/badge/TikTok-v46.4.0-ff0050?style=flat-square&logo=tiktok&logoColor=white)
+![Version](https://img.shields.io/badge/TikTok-v46.8.0-ff0050?style=flat-square&logo=tiktok&logoColor=white)
 ![Build](https://img.shields.io/badge/Build-464038-555555?style=flat-square)
 ![Updated](https://img.shields.io/badge/Updated-Regularly-brightgreen?style=flat-square)
 
 🔓 Pinning defeated&nbsp;&nbsp;·&nbsp;&nbsp;🔐 Login & OTP&nbsp;&nbsp;·&nbsp;&nbsp;🧬 x-argus / x-gorgon&nbsp;&nbsp;·&nbsp;&nbsp;🎬 Video CDN&nbsp;&nbsp;·&nbsp;&nbsp;🛒 TikTok Shop
 
-<img width="1073" height="710" alt="TikTok iOS SSL Pinning Bypass PoC – Login & Passport Traffic Captured" src="https://github.com/user-attachments/assets/72bab04f-e798-4eab-aa79-65fe59913869" />
+<img width="590" height="1280" alt="Image" src="https://github.com/user-attachments/assets/9f19c3b8-4aa8-4db3-87c3-08d3915f7875" />
 
-_Live capture — TikTok iOS `passport/email/send_code/` intercepted in cleartext. v46.4.0 on iPhone / iOS 26.6._
+_Live capture — TikTok iOS `passport/email/send_code/` intercepted in cleartext. v46.8.0 on iPhone / iOS 26.6._
 
 </div>
 
@@ -44,7 +44,7 @@ _Live capture — TikTok iOS `passport/email/send_code/` intercepted in cleartex
 
 | App | Bundle ID | Version | Build | Arch |
 |:----|:----------|:-------:|:-----:|:----:|
-| **TikTok for iOS** | `com.zhiliaoapp.musically` | `46.4.0` | `464038` | `arm64` |
+| **TikTok for iOS** | `com.zhiliaoapp.musically` | `46.8.0` | `464038` | `arm64` |
 
 ---
 
