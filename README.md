@@ -12,7 +12,6 @@
 ![iOS](https://img.shields.io/badge/iOS_14.0+-000000?style=flat-square&logo=apple&logoColor=white)
 ![ARM64](https://img.shields.io/badge/arm64-blue?style=flat-square)
 ![Version](https://img.shields.io/badge/TikTok-v46.8.0-ff0050?style=flat-square&logo=tiktok&logoColor=white)
-![Build](https://img.shields.io/badge/Build-464038-555555?style=flat-square)
 ![Updated](https://img.shields.io/badge/Updated-Regularly-brightgreen?style=flat-square)
 
 🔓 Pinning defeated&nbsp;&nbsp;·&nbsp;&nbsp;🔐 Login & OTP&nbsp;&nbsp;·&nbsp;&nbsp;🧬 x-argus / x-gorgon&nbsp;&nbsp;·&nbsp;&nbsp;🎬 Video CDN&nbsp;&nbsp;·&nbsp;&nbsp;🛒 TikTok Shop
@@ -42,9 +41,9 @@ _Live capture — TikTok iOS `passport/email/send_code/` intercepted in cleartex
 
 ## 📦 Build
 
-| App | Bundle ID | Version | Build | Arch |
-|:----|:----------|:-------:|:-----:|:----:|
-| **TikTok for iOS** | `com.zhiliaoapp.musically` | `46.8.0` | `464038` | `arm64` |
+| App | Bundle ID | Version | Arch |
+|:----|:----------|:-------:|:----:|
+| **TikTok for iOS** | `com.zhiliaoapp.musically` | `46.8.0` | `arm64` |
 
 ---
 
