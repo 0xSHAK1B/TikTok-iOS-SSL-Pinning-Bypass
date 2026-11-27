@@ -6,20 +6,21 @@
 
 <br>
 
-[![Download IPA](https://img.shields.io/badge/⬇_DOWNLOAD_IPA_v47.1.0-ff0050?style=for-the-badge&logo=tiktok&logoColor=white)](../../releases/latest)
+[![Download IPA](https://img.shields.io/badge/⬇_DOWNLOAD_IPA_v47.9.0-ff0050?style=for-the-badge&logo=tiktok&logoColor=white)](../../releases/latest)
 [![Telegram](https://img.shields.io/badge/Chat_on_Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/MUH4MM4DSH4KIB)
 
 ![iOS](https://img.shields.io/badge/iOS_14.0+-000000?style=flat-square&logo=apple&logoColor=white)
 ![ARM64](https://img.shields.io/badge/arm64-blue?style=flat-square)
-![Version](https://img.shields.io/badge/TikTok-v47.1.0-ff0050?style=flat-square&logo=tiktok&logoColor=white)
+![Version](https://img.shields.io/badge/TikTok-v47.9.0-ff0050?style=flat-square&logo=tiktok&logoColor=white)
 ![Updated](https://img.shields.io/badge/Updated-Regularly-brightgreen?style=flat-square)
 
 🔓 Pinning defeated&nbsp;&nbsp;·&nbsp;&nbsp;🔐 Login & OTP&nbsp;&nbsp;·&nbsp;&nbsp;🧬 x-argus / x-gorgon&nbsp;&nbsp;·&nbsp;&nbsp;🎬 Video CDN&nbsp;&nbsp;·&nbsp;&nbsp;🛒 TikTok Shop
 
-<img width="1151" height="657" alt="image" src="https://github.com/user-attachments/assets/a2cda035-e821-4ece-937c-11e79559260c" />
+<img width="1049" height="575" alt="TikTok" src="https://github.com/user-attachments/assets/f6090de6-ae6a-4215-9ea3-8cff35cc2b4b" />
 
 
-_Live capture — TikTok iOS `passport/email/send_code/` intercepted in cleartext. v47.1.0 on iPhone / iOS 26.6._
+
+_Live capture — TikTok iOS `passport/email/send_code/` intercepted in cleartext. v47.9.0 on iPhone / iOS 26.6._
 
 </div>
 
@@ -44,7 +45,7 @@ _Live capture — TikTok iOS `passport/email/send_code/` intercepted in cleartex
 
 | App | Bundle ID | Version | Arch |
 |:----|:----------|:-------:|:----:|
-| **TikTok for iOS** | `com.zhiliaoapp.musically` | `47.1.0` | `arm64` |
+| **TikTok for iOS** | `com.zhiliaoapp.musically` | `47.9.0` | `arm64` |
 
 ---
 
